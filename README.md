@@ -1,11 +1,43 @@
-# LabCar
+# LabCar  
+Layout challenge with BEM methodology
 
-He tratado de hacer una copia lo más exacta posible al diseño original, debo aclarar que la imagen no me pertenece, es una maquetación con html y css
+## Indice
+- [LabCar](#labcar)
+  - [Indice](#indice)
+    - [Information:](#information)
+    - [Description:](#description)
+    - [Reference Images](#reference-images)
+    - [Structure:](#structure)
+    - [Technologies used:](#technologies-used)
+*** 
+### Information:
+  ***Theme:*** css layout  
+  ***Autor:*** Andu15  
+  ***Created:*** 06/22
+  ***Version:*** 1.0.0  
 
+### Description: 
+This repository aims to challenge my knowledge to obtain a replica of a reference image
+Remark: the reference image does not belong to me
 
-## Imagen real
+### Reference Images
+![image1](assets/images/boilerplate.png)
 
-La imagen real de referencia es la siguiente, los créditos a quién corresponda
+Note: the credits to whom it corresponds
 
-<img class="./assets/images/boilerplate.png" alt="reference-img">
+### Structure:
+<pre>
+├── assets/
+|   ├── images/
+|   └── product/
+├── css/
+├── js/
+|   └── app.js
+├── .gitignore
+├── index.html
+└── README.md
+</pre>
 
+### Technologies used:
+- HTML
+- CSS
