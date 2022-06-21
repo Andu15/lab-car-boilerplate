@@ -6,6 +6,7 @@ Layout challenge with BEM methodology
   - [Indice](#indice)
     - [Information:](#information)
     - [Description:](#description)
+    - [Final Design:](#final-design)
     - [Reference Images](#reference-images)
     - [Structure:](#structure)
     - [Technologies used:](#technologies-used)
@@ -20,16 +21,20 @@ Layout challenge with BEM methodology
 This repository aims to challenge my knowledge to obtain a replica of a reference image
 Remark: the reference image does not belong to me
 
+### Final Design:
+- [Figma](https://www.figma.com/file/7giUjZRNWbngN0YDV83mF3/lab-car-boilerplate)
+
 ### Reference Images
-![image1](assets/images/boilerplate.png)
+![image1](assets/boilerplate/boilerplate1.png)
 
 Note: the credits to whom it corresponds
 
 ### Structure:
 <pre>
 ├── assets/
-|   ├── images/
-|   └── product/
+|   ├── boilerplate/
+|   ├── final/
+|   └── images/
 ├── css/
 ├── js/
 |   └── app.js
@@ -41,3 +46,4 @@ Note: the credits to whom it corresponds
 ### Technologies used:
 - HTML
 - CSS
+- JS
