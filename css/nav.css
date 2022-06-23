@@ -1,7 +1,50 @@
+/*  visible no se usa aun */
+.visible {
+  display: block;
+}
 
+.none {
+  display: none;
+}
 
 /* header */
 .header {
+  background-color: var(--neutral-bg-white);
+  display: grid;
+  grid-template-columns: 25% 75%;
+  justify-items: center;
+  align-content: center;
+}
+
+.header__logo {
+  align-self: center;
+}
+
+.header__nav {
+  border-top: solid var(--gray-text) 1px;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.header__nav__ul {
+  padding: 0.5rem 1rem;
+}
+
+.header__nav__ul__li {
+  padding: 0.5rem;
+}
+
+.header__nav__ul__li__a {
+  color: var(--gray-text);
+}
+
+
+
+/* laptop */
+/* .header {
   display: flex;
   background-color: var(--neutral-bg-white);
   justify-content: space-between;
@@ -29,4 +72,4 @@
 .header__nav__ul__li a{
   color: var(--gray-text);
   font-weight: bold;
-}
+} */
