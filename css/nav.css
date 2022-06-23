@@ -11,12 +11,21 @@
 .header {
   background-color: var(--neutral-bg-white);
   display: grid;
-  grid-template-columns: 25% 75%;
-  justify-items: center;
-  align-content: center;
+  grid-template-columns: 15% 85%;
+}
+
+.header__btn {
+  justify-self: start;
+  background-color: var(--neutral-text-white);
+  border-radius: 3px;
+  color: var(--gray-text);
+  border: .7px solid var(--gray-text);
+  margin: 1rem 0 1rem 1rem;
+  padding: .5em;
 }
 
 .header__logo {
+  justify-self: center;
   align-self: center;
 }
 
@@ -43,21 +52,8 @@
 
 
 
-/* laptop */
-/* .header {
-  display: flex;
-  background-color: var(--neutral-bg-white);
-  justify-content: space-between;
-  padding: 0 1em;
-}
 
-.header__logo {
-  padding: 1em 0;
-}
-
-.header__nav {
-  margin: auto 0;
-}
+/* 
 
 .header__nav__ul {
   display: flex;
@@ -73,3 +69,35 @@
   color: var(--gray-text);
   font-weight: bold;
 } */
+
+@media (min-width: 1024px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+  }
+  .header__btn {
+    display: none;
+  }
+  .header__logo {
+    padding: 1em 0;
+  }
+  .header__nav {
+    display: block;
+    margin: auto 0;
+    border-top: none;
+  }
+  .header__nav__ul{
+    display: flex;
+    justify-content: end;
+  }
+  .header__nav__ul__li--travel{
+    order: 2;
+  }
+  .header__nav__ul__li--drive{
+    order: 3;
+  }
+  .header__nav__ul__li--login{
+    order: 1;
+  }
+}
