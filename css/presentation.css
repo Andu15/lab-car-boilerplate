@@ -1,4 +1,64 @@
-.container {
+.presentation--article {
+  background-image: url("../assets/images/taxi.jpg");
+  background-size: 100% 20em;
+  height: 20em;
+  position: relative;
+}
+
+.presentation--div {
+  position: absolute;
+  background-color: var(--main-bg-color);
+  right: 0;
+  top: 20%;
+  padding: 1em 1.5em;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.presentation__title {
+  display: none;
+}
+
+.presentation--par::before {
+  content: "Comienza a viajar con ";
+}
+
+.presentation--par {
+  color: var(--neutral-text-white);
+  font-weight: lighter;
+  font-size: 30px;
+  flex-grow: 4;
+  margin: .8rem 0;
+}
+
+.presentation--par--img {
+  width: 20%;
+}
+
+.btn {
+  background-color: var(--neutral-text-white);
+  border-radius: 5px;
+  padding: .5em;
+  margin: .5em 0;
+  border: .7px solid var(--gray-text);
+}
+
+.btn-main::before {
+  content: "Descarga el app";
+}
+
+.btn-main {
+  color: var(--black-text);
+}
+
+.strike, .btn-driver {
+  display: none;
+}
+
+
+
+/* .container {
   height: 40em;
   background-image: url("../assets/images/taxi.jpg");
   background-repeat: no-repeat;
@@ -72,4 +132,4 @@
   border-bottom: 1px solid #111;
   width: 100%;
   border-color: var(--neutral-text-white);
-}
+} */
