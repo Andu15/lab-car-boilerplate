@@ -38,4 +38,69 @@
   display: none;
 }
 
-@media (min-width: 680px) {}
+@media (min-width: 680px) {
+  .download--article {
+    padding: 3rem 0;
+  }
+  .download--div {
+    width: 85%;
+    margin: 0;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 20% 80%;
+    grid-auto-flow: row;
+    justify-items: center;
+  }
+  .download--title::before {
+    content: "Descarga la nueva app";
+  }
+  .download--title {
+    font-weight: normal;
+    font-size: 20px;
+    width: 70%;
+    text-align: left;
+    align-self: end;
+  }
+  .download--img {
+    margin: 0px auto;
+    padding: 1em;
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+  .download__text--extends{
+    display: block;
+    width: 70%;
+    align-self: start;
+  }
+  .download__text--short{
+    display: none;
+  }
+}
+
+@media (min-width: 835px) {
+  .download--title {
+    font-size: 25px;
+  }
+  .download__text--extends{
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .download__text__paragraph {
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .download--title {
+    width: 60%;
+    font-size: 30px;
+  }
+  .download__text--extends{
+    width: 60%;
+    font-size: 22px;
+  }
+}
