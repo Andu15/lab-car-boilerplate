@@ -1,3 +1,41 @@
 .download--article {
   background-color: var(--main-bg-color);
+  padding: .5rem;
 }
+
+.download--div {
+  border-radius: 5px;
+  border: 1px solid var(--neutral-bg-white);
+  width: 95%;
+  margin: .5em auto;
+}
+
+.download--title::before {
+  content: "La nueva app";
+}
+
+.download--title {
+  color: var(--neutral-text-white);
+  text-align: center;
+  margin: 1rem 0 0 0;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.download--img {
+  width: 80%;
+  display: block;
+  margin: 0px auto;
+  padding: 1em;
+}
+
+.download__text {
+  color: var(--neutral-text-white);
+  margin: 2rem 0 .5em .5em;
+}
+
+.download__text--extends {
+  display: none;
+}
+
+@media (min-width: 680px) {}
