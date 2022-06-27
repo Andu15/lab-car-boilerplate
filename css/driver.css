@@ -1,0 +1,62 @@
+.driver--article {
+  background-image: url("../assets/images/conduce.jpg");
+  height: 20em;
+  background-repeat: no-repeat;
+  background-position: 19% 100%;
+  position: relative;
+}
+
+.driver--div {
+  position: absolute;
+  width: 80%;
+  margin-top: 6rem;
+  margin-left: 1rem;
+}
+
+.presentation__text {
+  color: var(--neutral-text-white);
+  line-height: 1.1;
+}
+
+.first-title {
+  font-size: 20px;
+  font-weight: normal;
+  font-size: xx-large;
+  margin-bottom: .5rem;
+}
+
+.btn-job {
+  background-color: var(--main-bg-color);
+  color: var(--neutral-text-white);
+  border-radius: 5px;
+  margin-top: 1rem;
+  border: 1px solid var(--main-bg-color-dark);
+  font-size: 15px;
+}
+
+@media (min-width: 680px) {
+  .driver--article {
+    background-position: 100% 20%;
+    background-size: 100% 20em;
+  }
+  .driver--div {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 50%;
+    margin-left: 20rem;
+    margin-top: 4rem;
+    padding: .5rem;
+  }
+}
+
+@media (min-width: 780px) {
+  .driver--div {
+    margin-left: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .driver--div {
+    width: 40%;
+    margin-left: 55%;
+  }
+}

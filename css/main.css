@@ -104,6 +104,7 @@ input, select {
 /* variables */
 :root {
   --main-bg-color: #EEB844;
+  --main-bg-color-dark: #af7e15;
   --neutral-bg-white: #F8F8F8;
   --neutral-text-white: #fff;
   --gray-text: #B5B5B5;
