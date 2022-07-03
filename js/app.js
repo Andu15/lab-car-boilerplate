@@ -6,6 +6,12 @@ const sectionForm = document.querySelector('#section-form');
 const btnClose = document.querySelector('#btn-close');
 const form = document.querySelector('#form');
 const btnSubmit = document.querySelector('#btn-submit');
+const formLogin = document.querySelector('#form-login');
+const btnLogin = document.querySelector('#btn-login');
+const sectionLogin = document.querySelector('#section-login');
+const loginReference = document.querySelector('#login-reference');
+
+
 
 function toggleElement(element, classes) {
   element.classList.toggle(classes);
@@ -29,4 +35,16 @@ btnSubmit.addEventListener('click', () => {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
+});
+
+formLogin.addEventListener('submit', (e) => {
+  e.preventDefault();
+});
+
+btnLogin.addEventListener('click', () => {
+  toggleElement(sectionLogin, 'none');
+});
+
+loginReference.addEventListener('click', () => {
+  toggleElement(sectionLogin, 'none');
 });

@@ -26,7 +26,7 @@
       <ul class="header__nav__ul">
         <li class="header__nav__ul__li header__nav__ul__li--travel"><a class="header__nav__ul__li__a" href="#travel">Viaja</a></li>
         <li class="header__nav__ul__li header__nav__ul__li--drive"><a class="header__nav__ul__li__a" href="#driver">Conduce</a></li>
-        <li class="header__nav__ul__li header__nav__ul__li--login"><a class="header__nav__ul__li__a" href="#login">Inicia Sesión</a></li>
+        <li class="header__nav__ul__li header__nav__ul__li--login"><a id="login-reference" class="header__nav__ul__li__a" href="#section-login">Inicia Sesión</a></li>
       </ul>
     </nav>
   </header>
@@ -144,11 +144,11 @@
     </article>
   </section>
 
-  <section class="section-login">
+  <section id="section-login" class="section-login none">
     <article class="modal login-container">
       <img class="login-icon" src="./assets/icons/driver-icon.svg"/>
       <hr class="line"/>
-      <form class="form form-login">
+      <form id="form-login" class="form form-login">
         <div class="input-group">
           <span class="input-group-icon"><i class="fas fa-user"></i></span>
           <input type="text" class="input-group-item" placeholder="Username">
