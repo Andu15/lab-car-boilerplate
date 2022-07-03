@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="./css/driver.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="./css/rates.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="./css/footer.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="./css/form.css" media="screen" />
 </head>
 <body>
 
@@ -22,9 +23,9 @@
     <img class="header__logo" src="./assets/images/logoForma.png" alt="app-logo"/>
     <nav id="header-nav" class="header__nav none">
       <ul class="header__nav__ul">
-        <li class="header__nav__ul__li header__nav__ul__li--travel"><a class="header__nav__ul__li__a" href="/travel">Viaja</a></li>
-        <li class="header__nav__ul__li header__nav__ul__li--drive"><a class="header__nav__ul__li__a" href="/drive">Conduce</a></li>
-        <li class="header__nav__ul__li header__nav__ul__li--login"><a class="header__nav__ul__li__a" href="/login">Inicia Sesión</a></li>
+        <li class="header__nav__ul__li header__nav__ul__li--travel"><a class="header__nav__ul__li__a" href="#travel">Viaja</a></li>
+        <li class="header__nav__ul__li header__nav__ul__li--drive"><a class="header__nav__ul__li__a" href="#driver">Conduce</a></li>
+        <li class="header__nav__ul__li header__nav__ul__li--login"><a class="header__nav__ul__li__a" href="#login">Inicia Sesión</a></li>
       </ul>
     </nav>
   </header>
@@ -65,17 +66,17 @@
   </section>
 
   <section class="container">
-    <article class="driver--article">
+    <article id="driver" class="driver--article">
       <div class="driver--div">
         <h2 class="presentation__text first-title">Conduce cuando quieras</h2>
         <p class="presentation__text">LabCar es una opción flexible para alcanzar tus metas cuando quieras</p>
-        <button class="btn btn-job" type="button" name="">Conviértete en conductor</button>
+        <button id="btn-job" class="btn btn-job" type="button" name="">Conviértete en conductor</button>
       </div>
     </article>
   </section>
 
   <section class="container">
-    <article class="rates--article">
+    <article id="travel" class="rates--article">
       <div class="rates--article--div">
         <h2 class="rates--title">Tarifas</h2>
         <p class="rates__text">Consulta tus tarifas LabCar aqui</p>
@@ -93,6 +94,57 @@
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386.2976903101942!2d-77.0211401356486!3d-12.125735204084581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8033859ac19%3A0x4046e628523d4ca1!2sJuan%20de%20la%20Fuente%20%26%20Avenida%20Alfredo%20Benavides%2C%20Miraflores%2015047!5e0!3m2!1ses-419!2spe!4v1656294284685!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </article>
+  </section>
+
+  <section id="section-form" class="section-form none">
+    <article class="modal">
+      <i id="btn-close" class="fas fa-times close"></i>
+      <hr class="line"/>
+      <form id="form" class="form">
+        <div class="form-content">
+          <label class="label" for="vehicle">¿Tienes vehículo de 4 puertas?</label>
+          <select class="form-content__item" name="vehicle" id="vehicle">
+            <option value="si">Si</option>
+            <option value="no">No</option>
+          </select>
+          <label class="label" for="brand">Marca</label>
+          <select class="form-content__item" name="brand" id="brand">
+            <option value="marca">Elige la marca del vehículo</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+          <p class="form-content__text">¿No ves tu vehículo en la lista? Envía un correo electrónico a <span class="form-content__text--mail">sociosmdv@uber.com</span></p>
+          <label class="label" for="model">Modelo</label>
+          <select class="form-content__item" name="model" id="model">
+            <option value="modelo1">Modelo 1</option>
+            <option value="modelo2">Modelo 2</option>
+            <option value="modelo3">Modelo 3</option>
+            <option value="modelo4">Modelo 4</option>
+          </select>
+          <label class="label" for="year">Año</label>
+          <select class="form-content__item" name="year" id="year">
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+          </select>
+          <label class="label" for="registration-number">Número de matrícula</label>
+          <input class="form-content__item" type="text" id="registration-number" name="registration-number" placeholder="Número de matrícula" />
+          <p class="form-content__text">La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
+        </div>
+        <hr class="line"/>
+        <input id="btn-submit" class="btn btn-submit" type="submit" value="ENVIAR">
+      </form>
+    </article>
+  </section>
+
+  <section class="container">
+    <article class="modal"></article>
   </section>
 
   <footer>

@@ -106,8 +106,11 @@ input, select {
   --main-bg-color: #EEB844;
   --main-bg-color-dark: #af7e15;
   --main-bg-color-black: #2B2B2B;
+  --main-bg-color-light-blue: #74BFDB;
+  --main-bg-color-gray: #AEA9A5;
   --neutral-bg-white: #F8F8F8;
   --neutral-text-white: #fff;
   --gray-text: #B5B5B5;
   --black-text: #0c0b0b;
+  --highlighter-light-blue: #6E8DAC;
 }
