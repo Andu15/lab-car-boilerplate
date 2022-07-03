@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="./css/presentation.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="./css/download.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="./css/driver.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="./css/rates.css" media="screen" />
 </head>
 <body>
 
@@ -71,6 +72,29 @@
       </div>
     </article>
   </section>
+
+  <section class="container">
+    <article class="rates--article">
+      <div class="rates--article--div">
+        <h2 class="rates--title">Tarifas</h2>
+        <p class="rates__text">Consulta tus tarifas LabCar aqui</p>
+        <div class="rates__section">
+          <i class="fa fa-dot-circle" aria-hidden="true"></i>
+          <input class="rates__section__input" type="text" placeholder="Ingrese su punto de partida"/>
+        </div>
+        <div class="rates__section">
+          <i class="fa fa-location-arrow" aria-hidden="true"></i>
+          <input class="rates__section__input" type="text" placeholder="Ingrese su destino"/>
+        </div>
+        <button type="button" class="btn btn-route">¡Trazar ruta!</button>
+      </div>
+      <div class="rates--article--div map-container">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386.2976903101942!2d-77.0211401356486!3d-12.125735204084581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8033859ac19%3A0x4046e628523d4ca1!2sJuan%20de%20la%20Fuente%20%26%20Avenida%20Alfredo%20Benavides%2C%20Miraflores%2015047!5e0!3m2!1ses-419!2spe!4v1656294284685!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </article>
+  </section>
+
+  <footer></footer>
 
   <script src="https://kit.fontawesome.com/a81368914c.js"></script>
   <script src="js/app.js"></script>
